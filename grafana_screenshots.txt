@@ -1,0 +1,3 @@
+node_exporter: http://i.imgur.com/eQTjbJv.png
+docker: http://i.imgur.com/Iziu1nM.png
+mysqld: http://i.imgur.com/fkKKFVI.png

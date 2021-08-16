@@ -1,0 +1,23 @@
+root@node1:/opt/mysqld_exporter# ./mysqld_exporter --collect.global_status --collect.info_schema.innodb_metrics --collect.auto_increment.columns --collect.info_schema.processlist --collect.binlog_size --collect.info_schema.tablestats --collect.global_variables --collect.info_schema.query_response_time --collect.info_schema.userstats --collect.info_schema.tables --collect.perf_schema.tablelocks --collect.perf_schema.file_events --collect.perf_schema.eventswaits --collect.perf_schema.indexiowaits --collect.perf_schema.tableiowaits --collect.slave_status --web.listen-address=0.0.0.0:9104 --config.my-cnf /opt/mysqld_exporter/.mysqld_exporter.cnf
+level=info ts=2021-08-16T17:11:48.026Z caller=mysqld_exporter.go:277 msg="Starting msqyld_exporter" version="(version=0.13.0, branch=HEAD, revision=ad2847c7fa67b9debafccd5a08bacb12fc9031f1)"
+level=info ts=2021-08-16T17:11:48.027Z caller=mysqld_exporter.go:278 msg="Build context" (gogo1.16.4,userroot@e2043849cb1f,date20210531-07:30:16)=(MISSING)
+level=info ts=2021-08-16T17:11:48.027Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=info_schema.processlist
+level=info ts=2021-08-16T17:11:48.027Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=info_schema.tables
+level=info ts=2021-08-16T17:11:48.027Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=info_schema.innodb_metrics
+level=info ts=2021-08-16T17:11:48.027Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=global_status
+level=info ts=2021-08-16T17:11:48.027Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=global_variables
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=slave_status
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=perf_schema.indexiowaits
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=perf_schema.tablelocks
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=perf_schema.eventswaits
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=auto_increment.columns
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=binlog_size
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=perf_schema.tableiowaits
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=info_schema.userstats
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=perf_schema.file_events
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=info_schema.innodb_cmpmem
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=info_schema.query_response_time
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=info_schema.tablestats
+level=info ts=2021-08-16T17:11:48.028Z caller=mysqld_exporter.go:293 msg="Scraper enabled" scraper=info_schema.innodb_cmp
+level=info ts=2021-08-16T17:11:48.029Z caller=mysqld_exporter.go:303 msg="Listening on address" address=0.0.0.0:9104
+level=info ts=2021-08-16T17:11:48.029Z caller=tls_config.go:191 msg="TLS is disabled." http2=false
